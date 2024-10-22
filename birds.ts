@@ -1,7 +1,6 @@
 import express, { Request, Response, NextFunction } from 'express';
 
 const router = express.Router();
-
 // Middleware that is specific to this router
 router.use((req: Request, res: Response, next: NextFunction) => {
   console.log('Time: ', Date.now());
